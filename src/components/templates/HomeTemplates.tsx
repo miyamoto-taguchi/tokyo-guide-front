@@ -10,6 +10,7 @@ const HomeTemplates = () => {
     <div>
       <h1 className="font-bold text-3xl">Welcom to Tokyo Guide</h1>
       <LinkButton href="/video">VideoPage</LinkButton>
+      <LinkButton href="/test">TestPage</LinkButton>
     </div>
   );
 };
