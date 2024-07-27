@@ -15,7 +15,8 @@
       "skipFiles": [
         "<node_internals>/**",
         "${workspaceFolder}/.next/**",
-        "${workspaceFolder}/node_modules/**"
+        "${workspaceFolder}/node_modules/**",
+        "${workspaceFolder}/public/**"
       ]
     },
     {
@@ -25,7 +26,8 @@
       "skipFiles": [
         "<node_internals>/**",
         "${workspaceFolder}/.next/**",
-        "${workspaceFolder}/node_modules/**"
+        "${workspaceFolder}/node_modules/**",
+        "${workspaceFolder}/public/**"
       ],
       "command": "npm run dev",
       "serverReadyAction": {
