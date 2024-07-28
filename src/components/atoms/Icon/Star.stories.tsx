@@ -1,12 +1,9 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import Rate, { RateProps } from "./Rate";
+import Star, { StarProps } from "./Star";
 
-const defaultArgs: RateProps = {
-  initialRating: 1,
-  onRatingChange: () => {
-    console.log("rate");
-  },
+const defaultArgs: StarProps = {
+  isSelected: true,
 };
 
 /**
@@ -14,15 +11,15 @@ const defaultArgs: RateProps = {
  * Atoms/Star.tsx
  */
 const meta = {
-  title: "Example/molecules/Rate",
-  component: Rate,
+  title: "Example/StarIcon",
+  component: Star,
   parameters: {
     layout: "centered",
   },
   tags: ["autodocs"],
   argTypes: {},
   args: defaultArgs,
-} satisfies Meta<typeof Rate>;
+} satisfies Meta<typeof Star>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
