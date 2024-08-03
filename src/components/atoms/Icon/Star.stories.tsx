@@ -11,7 +11,7 @@ const defaultArgs: StarProps = {
  * Atoms/Star.tsx
  */
 const meta = {
-  title: "Example/StarIcon",
+  title: "icons/Star",
   component: Star,
   parameters: {
     layout: "centered",

@@ -14,7 +14,7 @@ const defaultArgs: RateProps = {
  * Atoms/Star.tsx
  */
 const meta = {
-  title: "Example/molecules/Rate",
+  title: "molecules/Rate",
   component: Rate,
   parameters: {
     layout: "centered",
