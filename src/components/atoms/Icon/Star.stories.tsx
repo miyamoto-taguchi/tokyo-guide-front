@@ -7,7 +7,6 @@ const defaultArgs: StarProps = {
 };
 
 /**
- * ログインフォームコンポーネントのストーリー
  * Atoms/Star.tsx
  */
 const meta = {

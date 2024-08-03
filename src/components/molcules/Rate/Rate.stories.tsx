@@ -10,7 +10,6 @@ const defaultArgs: RateProps = {
 };
 
 /**
- * ログインフォームコンポーネントのストーリー
  * Atoms/Star.tsx
  */
 const meta = {
