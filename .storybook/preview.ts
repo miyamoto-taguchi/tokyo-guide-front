@@ -1,5 +1,6 @@
 import "../src/app/globals.css";
 import type { Preview } from "@storybook/react";
+import "../src/app/globals.css"; // グローバルスタイルのパス
 
 const preview: Preview = {
   parameters: {
@@ -10,6 +11,8 @@ const preview: Preview = {
       },
     },
   },
+
+  tags: ["autodocs"]
 };
 
 export default preview;

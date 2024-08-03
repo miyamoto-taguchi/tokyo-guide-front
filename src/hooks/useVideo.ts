@@ -7,6 +7,9 @@ export type VideoControls = {
   fastPlay: () => void;
 };
 
+/**
+ * ビデオ再生に関するカスタムフック
+ */
 export const useVideo = () => {
   const [isPlay, setIsPlay] = useState(false);
   const [duration, setDuration] = useState(0);

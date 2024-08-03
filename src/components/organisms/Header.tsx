@@ -1,8 +1,12 @@
 import React from "react";
 import Search from "../molcules/Search/Search";
-import { LinkButton, PrimaryButton } from "../atoms/Button";
+import { LinkButton } from "../atoms/Button";
 
-const Header = () => {
+type HeaderProps = {
+  isLogin: boolean;
+};
+
+const Header: React.FC<HeaderProps> = ({ isLogin }) => {
   return (
     <div className=" fixed shadow-md w-full p-3 flex gap-4 justify-between items-center bg-slate-200">
       <p>Tokyo Guide Logo</p>
@@ -12,6 +16,7 @@ const Header = () => {
         <LinkButton href="/">ABOUT</LinkButton>
         <LinkButton href="/">DOCS</LinkButton>
       </div>
+      {isLogin ? <>ログアウト</> : <>ログイン</>}
     </div>
   );
 };

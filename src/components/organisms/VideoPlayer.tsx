@@ -39,11 +39,11 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({
         {formatTime(currentTime)}/{formatTime(duration)}
       </p>
       {isPlay ? (
-        <PrimaryButton label="停止" handleClick={pause} />
+        <PrimaryButton handleClick={pause}>停止</PrimaryButton>
       ) : (
-        <PrimaryButton label="再生" handleClick={play} />
+        <PrimaryButton handleClick={play}>再生</PrimaryButton>
       )}
-      <PrimaryButton label="早送り" handleClick={fastPlay} />
+      <PrimaryButton handleClick={fastPlay}>早送り</PrimaryButton>
     </div>
   );
 };
