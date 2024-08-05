@@ -1,20 +1,21 @@
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
+import Link, { LinkProps } from "next/link";
 import React from "react";
 
-type LinkButtonProps = {
+type LinkButtonProps = LinkProps & {
   children: string;
-  href: string;
-  onClick?: () => void;
 };
 
-const LinkButton: React.FC<LinkButtonProps> = ({ children, href }) => {
+const LinkButton: React.FC<LinkButtonProps> = (props) => {
+  const { children, ...rest } = props;
   return (
-    <Link href={href}>
-      <Button variant="link" size="lg">
+    <>
+      <Link
+        className=" text-blue-400 cursor-pointer duration-75 hover:text-blue-700 active:opacity-50"
+        {...rest}
+      >
         {children}
-      </Button>
-    </Link>
+      </Link>
+    </>
   );
 };
 

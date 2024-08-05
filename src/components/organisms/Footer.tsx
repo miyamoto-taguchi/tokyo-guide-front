@@ -1,7 +1,7 @@
 import React from "react";
 import Typography from "@atoms/Typography";
 import AvatarIcon from "@atoms/Icon/AvatarIcon";
-import TopicList, { Topic } from "@molcules/TopicList";
+import TopicList, { Topic } from "@/components/molecules/TopicList";
 
 /**
  * フッター
