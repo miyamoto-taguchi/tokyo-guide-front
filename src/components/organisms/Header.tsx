@@ -1,5 +1,5 @@
 import React from "react";
-import Search from "../molcules/Search/Search";
+import Search from "../molecules/Search/Search";
 import { LinkButton } from "../atoms/Button";
 
 type HeaderProps = {
