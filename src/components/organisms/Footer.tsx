@@ -15,7 +15,7 @@ const Footer = () => {
     { href: "", label: "sample" },
   ];
   return (
-    <footer className="p-6">
+    <footer className="p-6 bg-primary text-white">
       <div className="grid grid-cols-2 gap-10">
         <div>
           <Typography variant="heading" size="xl2">

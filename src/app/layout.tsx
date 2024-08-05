@@ -19,8 +19,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Header />
-        <main className=" p-4 pt-24 min-h-screen ">{children}</main>
+        <Header isLogin={false} />
+        <main className="p-4 min-h-screen">{children}</main>
         <Footer />
       </body>
     </html>

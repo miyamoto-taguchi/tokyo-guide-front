@@ -4,24 +4,22 @@ import Footer from "./Footer";
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
-  title: "Example/Footer",
+  title: "Organisms/Footer",
   component: Footer,
   parameters: {
     // storybookの画面でのレイアウトオプション　centeredだと画面中央に配置される
     // https://storybook.js.org/docs/configure/story-layout
-    layout: "centered",
+    layout: "",
   },
   //  自動でドキュメントを生成してくれるか
   //  https://storybook.js.org/docs/writing-docs/autodocs
   tags: ["autodocs"],
   //  プロップスに渡す値
   //  https://storybook.js.org/docs/api/argtypes
-  argTypes: {
-    backgroundColor: { control: "color" },
-  },
+  argTypes: {},
   // onClickの引数をスパイするために'fn'を使用する。これは呼び出されるとアクションに表示される。
   // https://storybook.js.org/docs/essentials/actions#action-args
-  args: { onClick: fn() },
+  args: {},
 } satisfies Meta<typeof Footer>;
 
 export default meta;
