@@ -1,0 +1,40 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "サーバーサイドデバッグ",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "npm run dev"
+    },
+    {
+      "name": "クライアントサイドデバッグ",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:3000",
+      "skipFiles": [
+        "<node_internals>/**",
+        "${workspaceFolder}/.next/**",
+        "${workspaceFolder}/node_modules/**",
+        "${workspaceFolder}/public/**"
+      ]
+    },
+    {
+      "name": "フルスタックデバッグ",
+      "type": "node-terminal",
+      "request": "launch",
+      "skipFiles": [
+        "<node_internals>/**",
+        "${workspaceFolder}/.next/**",
+        "${workspaceFolder}/node_modules/**",
+        "${workspaceFolder}/public/**"
+      ],
+      "command": "npm run dev",
+      "serverReadyAction": {
+        "pattern": "started server on .+, url: (https?://.+)",
+        "uriFormat": "%s",
+        "action": "debugWithChrome"
+      }
+    }
+  ]
+}
