@@ -5,7 +5,7 @@ import LinkButton from "./LinkButton";
  * リンクボタンのストーリー
  */
 const meta = {
-  title: "Example/LinkButton",
+  title: "atoms/LinkButton",
   component: LinkButton,
   parameters: {
     layout: "centered",

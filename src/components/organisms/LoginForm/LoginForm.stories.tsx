@@ -1,13 +1,13 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { fn } from "@storybook/test";
-import LoginForm from "./";
+import LoginForm from "./LoginForm";
 
 /**
  * ログインフォームコンポーネントのストーリー
  * organisms/LoginForm.tsx
  */
 const meta = {
-  title: "Example/LoginForm",
+  title: "organisms/LoginForm",
   component: LoginForm,
   parameters: {
     layout: "centered",
