@@ -1,17 +1,14 @@
 import React from "react";
-import { Button } from "@/components/ui/button";
+import { Button, ButtonProps } from "@/components/ui/button";
 
-type PrimaryButtonProps = {
+type PrimaryButtonProps = ButtonProps & {
   children: string;
-  handleClick?: () => void;
 };
 
-const PrimaryButton: React.FC<PrimaryButtonProps> = ({
-  children,
-  handleClick,
-}) => {
+const PrimaryButton: React.FC<PrimaryButtonProps> = (props) => {
+  const { children, ...rest } = props;
   return (
-    <Button variant="default" onClick={handleClick}>
+    <Button variant="default" {...rest}>
       {children}
     </Button>
   );
