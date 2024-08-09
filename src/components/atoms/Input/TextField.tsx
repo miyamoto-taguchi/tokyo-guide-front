@@ -6,7 +6,7 @@ type TextFieldProps = InputProps;
 
 const TextField: React.FC<TextFieldProps> = (props) => {
   const { ...rest } = props;
-  return <Input type="text" {...rest} />;
+  return <Input {...rest} />;
 };
 
 export default TextField;
