@@ -1,5 +1,5 @@
 import React from "react";
-import { LinkButton } from "../atoms/Button";
+import { LinkButton } from "../../atoms/Button";
 
 /**
  * ホーム画面のテンプレート
