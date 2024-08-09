@@ -1,26 +1,12 @@
 "use client";
-import { Input } from "@/components/ui/input";
+import { Input, InputProps } from "@/components/ui/input";
 import React from "react";
 
-type TextFieldProps = {
-  value?: string;
-  placeHolder?: string;
-  handleChange: (value: string) => void;
-};
+type TextFieldProps = InputProps;
 
-const TextField: React.FC<TextFieldProps> = ({
-  value,
-  placeHolder,
-  handleChange,
-}) => {
-  return (
-    <Input
-      type="text"
-      value={value}
-      placeholder={placeHolder}
-      onChange={(e) => handleChange(e.target.value)}
-    />
-  );
+const TextField: React.FC<TextFieldProps> = (props) => {
+  const { ...rest } = props;
+  return <Input type="text" {...rest} />;
 };
 
 export default TextField;
